@@ -1,0 +1,17 @@
+  
+		- job_name: "bitbucket_prod"
+			static_configs:
+			- targets: ["dict_keys(['192.168.0.0']):dict_values(['9100'])"]
+	  
+		- job_name: "bitbucket_test"
+			static_configs:
+			- targets: ["dict_keys(['192.168.0.1']):dict_values(['9100'])"]
+	  
+		- job_name: "bitbucket_dmz"
+			static_configs:
+			- targets: ["dict_keys(['192.168.0.2']):dict_values(['9100'])"]
+	  
+		- job_name: "jenkins_test"
+			static_configs:
+			- targets: ["dict_keys(['192.168.0.3']):dict_values(['9100'])"]
+	
